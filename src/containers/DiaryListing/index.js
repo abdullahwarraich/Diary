@@ -24,7 +24,7 @@ const DiaryListing = () => {
   const [video, setVideo] = useState('')
 
   useEffect(() => {
-    setNoteList(getNotes())
+    setNoteList(getNotes() || [])
   }, [])
 
   const showModal = () => {
