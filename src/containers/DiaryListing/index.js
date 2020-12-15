@@ -65,7 +65,7 @@ const DiaryListing = () => {
         )
       setNoteList(selectedNotes)
     } else {
-      setNoteList(getNotes())
+      setNoteList(getNotes() || [])
     }
   }
 
