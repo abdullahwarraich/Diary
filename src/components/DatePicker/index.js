@@ -1,7 +1,7 @@
 import React from 'react'
 import { DatePicker as AntDatePicker } from 'antd'
 
-const DatePicker = ({dateOnChange}) => (
+const DatePicker = ({ dateOnChange }) => (
   <AntDatePicker onChange={dateOnChange} />
 )
 

@@ -6,7 +6,9 @@ const { Header } = Layout
 
 const AppHeader = () => (
   <Header style={HeaderStyle}>
-    <h1><strong>Diary</strong></h1>
+    <h1>
+      <strong>Diary</strong>
+    </h1>
   </Header>
 )
 

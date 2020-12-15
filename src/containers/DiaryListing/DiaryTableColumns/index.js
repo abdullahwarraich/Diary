@@ -15,7 +15,7 @@ export const diaryTableColumns = [
     dataIndex: 'imageLink',
     render: imageLink =>
       (imageLink && (
-        <a href='#' onClick={() => openImage(imageLink)}>
+        <a href='/#' onClick={() => openImage(imageLink)}>
           Open Image
         </a>
       )) ||

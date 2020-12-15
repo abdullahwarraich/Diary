@@ -78,7 +78,7 @@ const DiaryListing = () => {
               label='Filter Notes By Date Added'
               layout='horizontal'
             >
-              <Descriptions.Item label='Filter Notes By Date Added' >
+              <Descriptions.Item label='Filter Notes By Date Added'>
                 <DatePicker dateOnChange={filterNotes} />
               </Descriptions.Item>
             </Descriptions>

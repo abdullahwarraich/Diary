@@ -8,15 +8,15 @@ const getBase64 = (img, callback) => {
   reader.readAsDataURL(img)
 }
 
-const beforeUpload = (file) => {
-  const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png';
+const beforeUpload = file => {
+  const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png'
   if (!isJpgOrPng) {
-    message.error('You can only upload JPG/PNG file!');
+    message.error('You can only upload JPG/PNG file!')
   }
   return isJpgOrPng
 }
 
-const UploadImage = ({setImageUrl}) => {
+const UploadImage = ({ setImageUrl }) => {
   const [loading, setLoading] = useState(false)
   const [image, setImage] = useState('')
 
@@ -42,15 +42,19 @@ const UploadImage = ({setImageUrl}) => {
 
   return (
     <Upload
-      name="avatar"
-      listType="picture-card"
-      className="avatar-uploader"
+      name='avatar'
+      listType='picture-card'
+      className='avatar-uploader'
       showUploadList={false}
-      action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+      action='https://www.mocky.io/v2/5cc8019d300000980a055e76'
       beforeUpload={beforeUpload}
       onChange={handleChange}
     >
-      {image ? <img src={image} alt="avatar" style={{ width: '100%' }} /> : uploadButton}
+      {image ? (
+        <img src={image} alt='avatar' style={{ width: '100%' }} />
+      ) : (
+        uploadButton
+      )}
     </Upload>
   )
 }

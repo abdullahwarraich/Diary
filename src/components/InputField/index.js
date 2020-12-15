@@ -1,7 +1,12 @@
 import React from 'react'
 import { Input } from 'antd'
 
-const InputField = ({ inputOnChange, inputValue, inputPlaceholder = '', ...props }) => (
+const InputField = ({
+  inputOnChange,
+  inputValue,
+  inputPlaceholder = '',
+  ...props
+}) => (
   <Input
     allowClear
     onChange={inputOnChange}

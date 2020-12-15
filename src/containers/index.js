@@ -1,5 +1,3 @@
 import DiaryListing from './DiaryListing'
 
-export {
-  DiaryListing
-}
+export { DiaryListing }
